@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Lab1
 {
-    class Guy
+    public class Guy
     {
         public string Name; // 사람 이름
         public Bet MyBet; // Bet()의 인스턴스
@@ -34,16 +29,13 @@ namespace Lab1
         // 배팅하기
         public bool PlaceBet(int amount, int dog)
         {
-            MyBet = new Bet() { Amount = amount, DogNum = dog, Bettor = this };
+            MyBet = new Bet(this) { Amount = amount, DogNum = dog };
             if(this.Cash > MyBet.Amount)
             {
                 this.UpdateLabels();
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            else return false;
         }
 
         // 경주 후 합계 금액
