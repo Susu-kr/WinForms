@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Lab2_TheQuest
@@ -28,7 +25,7 @@ namespace Lab2_TheQuest
 
         public Player(Game game, Point location) : base(game, location)
         {
-            HitPoints = 10;
+            HitPoints = 100;
         }
 
         public void Hit(int maxDamage, Random random)

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Lab2_TheQuest
@@ -13,7 +9,6 @@ namespace Lab2_TheQuest
         private const int IMAGEHEIGHT = 40;
 
         public bool PickedUp { get; private set; }
-        public Point Location { get; private set; }
         private Size OnMapPictureBoxSize = new Size(IMAGEWITDH, IMAGEHEIGHT);
 
 

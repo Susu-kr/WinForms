@@ -45,6 +45,16 @@ namespace Lab2_TheQuest
             return player.Weapons.Contains(weaponName);
         }
 
+        public bool IsWeaponEquipped(string weaponName)
+        {
+            return player.IsWeaponEquipped(weaponName);
+        }
+
+        public bool CheckPotionUsed(string potionName)
+        {
+            return player.CheckPotionUsed(potionName);
+        }
+
         public void HitPlayer(int maxDamage, Random random)
         {
             player.Hit(maxDamage, random);
