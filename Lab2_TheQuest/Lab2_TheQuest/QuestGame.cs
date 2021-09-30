@@ -78,6 +78,7 @@ namespace Lab2_TheQuest
         public QuestGame()
         {
             InitializeComponent();
+            DoubleBuffered = true;
             LoadDB();
         }
 

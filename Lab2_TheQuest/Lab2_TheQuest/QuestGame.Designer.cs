@@ -489,6 +489,7 @@
             this.Controls.Add(this.Move_Left_BTN);
             this.Controls.Add(this.Move_Up_BTN);
             this.Controls.Add(this.MoveLable);
+            this.DoubleBuffered = true;
             this.Name = "QuestGame";
             this.Text = "The Quest";
             this.Load += new System.EventHandler(this.QuestGame_Load);
